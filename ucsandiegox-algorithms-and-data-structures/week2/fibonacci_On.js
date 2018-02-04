@@ -13,7 +13,7 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-rl.question('Enter a small number: ', (num) => {
+rl.question('', (num) => {
   console.log(calcFib(parseInt(num, 10)))
   rl.close()
 })
