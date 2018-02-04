@@ -10,10 +10,10 @@ const calcFib = (x) => x < 2 ? x : (() => {
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  terminal: false
 })
 
-rl.question('', (num) => {
-  console.log(calcFib(parseInt(num, 10)))
-  rl.close()
+rl.on('line', (num) => {
+  console.log(calcFib(parseInt(num.trim(), 10)))
+  process.exit()
 })
