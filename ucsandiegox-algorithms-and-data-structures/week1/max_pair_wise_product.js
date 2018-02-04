@@ -1,10 +1,10 @@
-const readline = require('readline')
+var readline = require('readline')
 
-const rl = readline.createInterface({input: process.stdin, terminal: false})
+var rl = readline.createInterface({input: process.stdin, terminal: false})
 
-let lineCount = 0
-let arrayLength = 2
-let sortedArrayOfPositiveIntegers = []
+var lineCount = 0
+var arrayLength = 2
+var sortedArrayOfPositiveIntegers = []
 
 rl.on('line', (line) => {
   lineCount += 1
@@ -15,8 +15,8 @@ rl.on('line', (line) => {
             .split(' ')
             .map(num => parseInt(num, 10))
             .sort((a, b) => a > b)
-  } else {
-    const arrLength = sortedArrayOfPositiveIntegers.length
+
+    var arrLength = sortedArrayOfPositiveIntegers.length
     console.log(sortedArrayOfPositiveIntegers[arrLength - 1] * sortedArrayOfPositiveIntegers[arrLength - 2])
     process.exit()
   }
