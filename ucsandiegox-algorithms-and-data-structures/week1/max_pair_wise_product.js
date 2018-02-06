@@ -1,14 +1,22 @@
-var readline = require('readline')
+const readline = require('readline')
+const rl = readline.createInterface({input: process.stdin, terminal: false})
+const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
 
-var rl = readline.createInterface({input: process.stdin, terminal: false})
-
+let inputCount = 0
+let arrLength = 0
 rl.on('line', (line) => {
-  var sortedArrayOfPositiveIntegers = line.trim()
-            .split(' ')
-            .map(num => parseInt(num, 10))
-            .sort((a, b) => a > b)
+  inputCount += 1
+  if (inputCount === 1) {
+    arrLength = parseInt(line, 10)
 
-  var arrLength = sortedArrayOfPositiveIntegers.length
-  console.log(sortedArrayOfPositiveIntegers[arrLength - 1] * sortedArrayOfPositiveIntegers[arrLength - 2])
-  process.exit()
+  } else if (inputCount === 2) {
+    const sortedArray = line.trim()
+      .split(' ')
+      .sort(collator.compare)
+
+    console.log(
+      parseInt(sortedArray[arrLength - 1], 10) * parseInt(sortedArray[arrLength - 2], 10)
+    )
+    process.exit()
+  }
 })
