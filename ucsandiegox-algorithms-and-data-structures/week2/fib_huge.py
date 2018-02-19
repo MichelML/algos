@@ -23,7 +23,7 @@ def fib_huge(nth_fibonacci):
 
 # real solution
 # taken from https://stackoverflow.com/a/40117659
-def Huge_Fib(n,m):
+def huge_fib(n,m):
     # Initialize a matrix [[1,1],[1,0]]    
     v1, v2, v3 = 1, 1, 0  
     # Perform fast exponentiation of the matrix (quickly raise it to the nth power)
@@ -35,7 +35,7 @@ def Huge_Fib(n,m):
 
 # real solution
 # taken from https://stackoverflow.com/a/40557208
-def fibmod(n, m):
+def fib_mod(n, m):
     assert 1 <= n <= 10**18, n
     assert 2 <= m <= 10**5, m
 
@@ -56,4 +56,4 @@ def fibmod(n, m):
 
 if __name__ == '__main__':
     n, m = map(int, input().split())
-    Huge_Fib(n, m)
+    huge_fib(n, m)
