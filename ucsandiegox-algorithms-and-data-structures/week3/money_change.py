@@ -6,5 +6,5 @@ def get_change(m):
     return m // 10 + fives // 5 + fives % 5 
 
 if __name__ == '__main__':
-    m = int(sys.stdin.read())
+    m = int(input())
     print(get_change(m))
