@@ -17,7 +17,6 @@ def get_shared_point(cluster):
 def optimal_points(segments):
     sortedSegments = sorted(segments, key=lambda x: x.start)
     clusters = [[sortedSegments[0]]]
-    # write your code here
     for i, s in enumerate(sortedSegments, start=1):
         lastCluster = clusters[-1]
         if all(s.start <= e.end for e in lastCluster):
