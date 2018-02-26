@@ -9,7 +9,7 @@ end
 
 def fast_count_segments(segments, points)
   count = Array.new(points.size, 0)
-  # write your code here
+  
   count
 end
 

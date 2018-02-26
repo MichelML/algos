@@ -3,7 +3,7 @@ import sys
 
 def binary_search(a, x):
     left, right = 0, len(a)
-    # write your code here
+    
 
 def linear_search(a, x):
     for i in range(len(a)):

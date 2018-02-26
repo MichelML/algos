@@ -4,7 +4,7 @@
 def get_change(n)
   count = 0
   coins = [1, 5, 10]
-  # write your code here
+  
   count
 end
 

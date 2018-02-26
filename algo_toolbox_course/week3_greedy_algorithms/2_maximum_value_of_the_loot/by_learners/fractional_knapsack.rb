@@ -3,7 +3,7 @@
 
 def get_optimal_value(capacity, weights, values)
   value = 0.0
-  # write your code here
+  
   value
 end
 

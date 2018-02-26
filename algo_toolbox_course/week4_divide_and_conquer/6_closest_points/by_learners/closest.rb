@@ -6,7 +6,7 @@ def min(a, b)
 end
 
 def minimum_distance(x, y)
-  # write your code here
+  
   Math.sqrt(10 ** 36)
 end
 

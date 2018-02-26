@@ -2,7 +2,7 @@
 # by Andronik Ordian
 
 def fib_partial_sum(m, n)
-  # write your code here
+  
   0
 end
 

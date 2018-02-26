@@ -2,7 +2,7 @@
 # by Andronik Ordian
 
 def edit_distance(a, b)
-  # write your code here	
+  	
   0
 end
 

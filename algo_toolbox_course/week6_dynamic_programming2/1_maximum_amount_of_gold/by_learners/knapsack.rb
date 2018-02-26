@@ -2,7 +2,7 @@
 # by Andronik Ordian
 
 def optimal_weight(w, weights)
-  # write your code here
+  
   result = 0
   weights.each { |weight| result += weight if result + weight <= w }
   result

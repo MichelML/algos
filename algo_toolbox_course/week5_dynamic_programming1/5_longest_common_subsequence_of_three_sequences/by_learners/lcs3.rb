@@ -2,7 +2,7 @@
 # by Andronik Ordian
 
 def lcs3(a, b, c)
-  # write your code here
+  
   [a.size, b.size, c.size].min
 end
 

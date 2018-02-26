@@ -2,7 +2,7 @@
 import sys
 
 def optimal_weight(W, w):
-    # write your code here
+    
     result = 0
     for x in w:
         if result + x <= W:

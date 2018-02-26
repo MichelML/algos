@@ -15,7 +15,7 @@ end
 
 
 def get_maximum_value(numbers, operations)
-  # write your code here
+  
   evaluate(2, '*', 2)
 end
 
