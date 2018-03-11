@@ -20,4 +20,4 @@ if __name__ == '__main__':
     cn = data[0]
     data = data[1:]
     c = data[:cn]
-    print(lcs3(a, b, c))
+    print(len(lcs3(a, b, c)))
