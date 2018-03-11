@@ -21,7 +21,7 @@ def optimal_sequence(n):
 
 
 n = int(input())
-sequence = list(dp_sequence(n))
+sequence = list(optimal_sequence(n))
 print(len(sequence) - 1)
 for x in sequence:
     print(x, end=' ')
