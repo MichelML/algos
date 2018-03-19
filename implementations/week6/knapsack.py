@@ -28,4 +28,4 @@ def optimal_weight(W, w):
 if __name__ == '__main__':
     input = sys.stdin.read()
     W, n, *w = list(map(int, input.split()))
-    print(knapSack(W, w, 1, n))
+    print(knapSack(W, w, w, n))
