@@ -12,6 +12,7 @@ const closeSymbols = {
 
 const checkBrackets = (str) => {
   const openedSymbols = []
+
   for (let i = 0; i < str.length; i++) {
     if (openSymbols[str[i]]) {
       openedSymbols.push([str[i], i])
