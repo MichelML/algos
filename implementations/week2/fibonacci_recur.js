@@ -1,8 +1,8 @@
-var readline = require('readline')
+let readline = require('readline')
 
-var calcFib = (x) => x < 2 ? x : calcFib(x - 1) + calcFib(x - 2)
+let calcFib = (x) => x < 2 ? x : calcFib(x - 1) + calcFib(x - 2)
 
-var rl = readline.createInterface({
+let rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 })

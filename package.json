@@ -1,0 +1,24 @@
+{
+  "name": "coursera_specialization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lintfix": "standard --fix */**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelML/algos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichelML/algos/issues"
+  },
+  "homepage": "https://github.com/MichelML/algos#readme",
+  "devDependencies": {
+    "standard": "11.0.1",
+    "tsjs": "0.5.1"
+  }
+}

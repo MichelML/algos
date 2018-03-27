@@ -12,7 +12,7 @@ const fibLastDigit = (n) => {
   return res
 }
 
-var rl = require('readline').createInterface({
+let rl = require('readline').createInterface({
   input: process.stdin,
   terminal: false
 })
