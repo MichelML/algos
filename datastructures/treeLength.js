@@ -1,15 +1,31 @@
 const treeLength = (array = []) => {
-  return array.reduce((acc, val) => {
-    acc[val] = !acc[val]
-      ? 1
-      : acc[val] + 1
+  if (array.length === 0) 
+    return 0
 
-    if (acc[val] >= 2) {
-      acc.COUNT -= 1
+  const counts = []
+  const childrenRegistry = {}
+  for (let i = 0; i < array.length; i++) {
+    let child = i
+    let count = 0
+
+    while (child !== -1) {
+      count += 1
+
+      if (childrenRegistry[child] === undefined || childrenRegistry[child] < count) {
+        childrenRegistry[child] = count
+        child = array[child]
+      } else {
+        child = -1
+        count = undefined
+      }
     }
 
-    return acc
-  }, {COUNT: array.length}).COUNT
+    if (count !== undefined) {
+      counts.push(count)
+    }
+  }
+
+  return Math.max(...counts)
 }
 
 let lineCount = 0
@@ -22,6 +38,7 @@ require('readline')
       const nodes = line
         .trim()
         .split(' ')
+        .map((val) => + val)
       console.log(treeLength(nodes))
       process.exit()
     }
