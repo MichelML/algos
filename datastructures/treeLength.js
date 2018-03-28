@@ -1,9 +1,11 @@
 const treeLength = (array = []) => {
-  if (array.length === 0) 
+  if (array.length === 0) {
     return 0
+  }
 
   const counts = []
   const childrenRegistry = {}
+
   for (let i = 0; i < array.length; i++) {
     let child = i
     let count = 0
